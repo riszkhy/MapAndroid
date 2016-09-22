@@ -10,6 +10,7 @@ public class GrabLocation extends AsyncTask<Object,String, String> {
 
     String googlePlacesData;
     String url;
+    String data;
     @Override
     protected String doInBackground(Object... objects) {
         try {
@@ -27,8 +28,14 @@ public class GrabLocation extends AsyncTask<Object,String, String> {
     @Override
     protected void onPostExecute(String s) {
         super.onPostExecute(s);
-        Log.d("GooglePlacesReadTask", "onPostExecute Entered");
-        Log.d("dataJson",s);
-        Log.d("GooglePlacesReadTask", "onPostExecute Exit");
+//        getPropData();
+
     }
+
+
+    public String getPropData() {
+        return data;
+    }
+
+
 }
