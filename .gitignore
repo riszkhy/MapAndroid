@@ -1,5 +1,7 @@
 /build
 /.gradle
+/.idea
+*.class
 /gradle
 gradle.properties
 local.properties
